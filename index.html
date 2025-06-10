@@ -15,6 +15,20 @@
       padding: 5px;
     }
   </style>
+  <script>
+    function validateLogin() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email === "admin@example.com" && password === "password123") {
+        alert("Login successful!");
+        return true;
+      } else {
+        alert("Invalid email or password!");
+        return false;
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>Login</h1>
@@ -32,19 +46,6 @@
     </div>
   </form>
 
-  <script>
-    function validateLogin() {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-
-      if (email === "admin@example.com" && password === "password123") {
-        alert("Login successful!");
-        return true;
-      } else {
-        alert("Invalid email or password!");
-        return false;
-      }
-    }
-  </script>
+  
 </body>
 </html>
